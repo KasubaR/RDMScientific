@@ -42,18 +42,27 @@ class ContactPageTest extends TestCase
             ->assertSee('tel:+260977783636', false)
             ->assertSee('mailto:sales@rdmscientific.com', false)
             ->assertSee('Plot No. 1 Chisokone Road')
-            ->assertSee('www.rdmscientific.com')
+            ->assertDontSee('<b>Website</b>', false)
             ->assertSee('Privacy notice')
             ->assertSee('aria-current="page"', false);
     }
 
-    public function test_contact_page_does_not_show_unconfirmed_map_hours_or_whatsapp(): void
+    public function test_contact_page_does_not_show_unconfirmed_map_or_hours(): void
     {
         $this->get('/contact')
             ->assertDontSee('<iframe', false)
-            ->assertDontSee('Business hours')
-            ->assertDontSee('WhatsApp')
-            ->assertDontSee('wa.me');
+            ->assertDontSee('Business hours');
+    }
+
+    public function test_contact_page_links_to_whatsapp_using_the_configured_number(): void
+    {
+        $this->get('/contact')
+            ->assertSee('https://wa.me/260977783636?text=', false)
+            ->assertSee('WhatsApp');
+
+        config(['rdm.whatsapp' => '260111222333']);
+
+        $this->get('/contact')->assertSee('https://wa.me/260111222333', false);
     }
 
     public function test_valid_enquiry_is_stored_and_sales_team_is_emailed(): void

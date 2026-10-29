@@ -7,7 +7,8 @@
 
 @php
     $field = fn (string $name) => $errors->has($name) ? ['aria-invalid' => 'true', 'aria-describedby' => 'err-'.$name] : [];
-    $mapsSearch = 'https://www.google.com/maps/search/?api=1&query='.urlencode(config('rdm.address'));
+    $whatsappUrl = 'https://wa.me/'.config('rdm.whatsapp').'?text='.rawurlencode('Hello RDM, I would like to make an enquiry.');
+    $mapsSearch ='https://www.google.com/maps/search/?api=1&query='.urlencode(config('rdm.address'));
 @endphp
 
 @section('content')
@@ -18,37 +19,10 @@
   <p>Call, email or send an enquiry. Our team will respond with availability, advice and pricing.</p>
 </section>
 
-<section class="card sec" aria-labelledby="details-h">
-  <div class="sec-head">
-    <span class="eyebrow">Get in touch</span>
-    <h2 class="sec-title" id="details-h">Contact details</h2>
-  </div>
-  <ul class="contact-cards">
-    <li class="crow">
-      <span class="ic"><x-icon name="phone" :size="22" /></span>
-      <div><b>Telephone</b><a href="tel:{{ config('rdm.phone_href') }}">{{ config('rdm.phone') }}</a></div>
-    </li>
-    <li class="crow">
-      <span class="ic"><x-icon name="mail" :size="22" /></span>
-      <div><b>Email</b><a href="mailto:{{ config('rdm.email') }}">{{ config('rdm.email') }}</a></div>
-    </li>
-    <li class="crow">
-      <span class="ic"><x-icon name="pin" :size="22" /></span>
-      <div>
-        <b>Office address</b>
-        <address>{{ config('rdm.address') }}</address>
-        <a href="{{ $mapsSearch }}" rel="noopener" target="_blank">Search this address on Google Maps</a>
-      </div>
-    </li>
-    <li class="crow">
-      <span class="ic"><x-icon name="globe" :size="22" /></span>
-      <div><b>Website</b><a href="{{ config('rdm.website') }}">www.rdmscientific.com</a></div>
-    </li>
-  </ul>
-</section>
-
 <section class="card sec" id="quote" aria-labelledby="form-h">
-  <div class="sec-head">
+  <div class="contact-layout">
+  <div class="form-col">
+  <div class="sec-head left">
     <span class="eyebrow">Enquiries &amp; quotations</span>
     <h2 class="sec-title" id="form-h">Send us an enquiry</h2>
     <p>Tell us what you need. Prices and availability are confirmed by our team after we receive your enquiry.</p>
@@ -141,6 +115,33 @@
     <button type="submit" class="btn btn-red">Send enquiry <x-icon name="arrow" :size="16" /></button>
     <p class="fine">Fields marked * are required.</p>
   </form>
+  </div>
+    <aside class="details-col" aria-labelledby="details-h">
+      <h2 id="details-h">Contact details</h2>
+      <ul class="contact-cards">
+        <li class="crow">
+          <span class="ic"><x-icon name="phone" :size="22" /></span>
+          <div><b>Telephone</b><a href="tel:{{ config('rdm.phone_href') }}">{{ config('rdm.phone') }}</a></div>
+        </li>
+        <li class="crow">
+          <span class="ic"><x-icon name="whatsapp" :size="22" /></span>
+          <div><b>WhatsApp</b><a href="{{ $whatsappUrl }}" rel="noopener" target="_blank">Chat with us on WhatsApp</a></div>
+        </li>
+        <li class="crow">
+          <span class="ic"><x-icon name="mail" :size="22" /></span>
+          <div><b>Email</b><a href="mailto:{{ config('rdm.email') }}">{{ config('rdm.email') }}</a></div>
+        </li>
+        <li class="crow">
+          <span class="ic"><x-icon name="pin" :size="22" /></span>
+          <div>
+            <b>Office address</b>
+            <address>{{ config('rdm.address') }}</address>
+            <a href="{{ $mapsSearch }}" rel="noopener" target="_blank">Search this address on Google Maps</a>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </div>
 </section>
 
 <section class="card sec privacy" id="privacy" aria-labelledby="priv-h">

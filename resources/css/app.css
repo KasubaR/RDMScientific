@@ -312,6 +312,20 @@ form.quote{display:flex;flex-direction:column;gap:16px}
 .prose ul{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
 .prose a{color:var(--red-dark);font-weight:700}
 
+.contact-layout{display:grid;grid-template-columns:minmax(280px,1fr) minmax(0,1.7fr);gap:36px;align-items:start}
+.sec-head.left{text-align:left;align-items:flex-start}
+.form-col{display:flex;flex-direction:column;gap:24px;min-width:0}
+.form-col .enquiry-form,.form-col .alert{max-width:none;margin-inline:0}
+.details-col{order:-1;display:flex;flex-direction:column;gap:20px}
+.details-col h2{font-size:22px;font-weight:800;color:var(--navy)}
+.details-col .contact-cards{grid-template-columns:1fr}
+.details-col .contact-cards{gap:24px}
+.details-col .contact-cards .crow{background:none;border:0;border-radius:0;padding:0}
+@media (max-width:860px){
+  .contact-layout{grid-template-columns:1fr}
+  .details-col{order:0}
+}
+
 /* 6. Responsive ------------------------------------------------------------ */
 @media (max-width:860px){
   .values{grid-template-columns:repeat(2,minmax(0,1fr))}

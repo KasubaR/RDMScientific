@@ -5,6 +5,9 @@ return [
     'phone' => '+260 977 783636',
     'phone_href' => '+260977783636',
     'email' => 'sales@rdmscientific.com',
+
+    // WhatsApp number in international format, digits only. Confirm this number is on WhatsApp.
+    'whatsapp' => env('RDM_WHATSAPP', '260977783636'),
     'address' => 'Plot No. 1 Chisokone Road, Off Great East Road, Lusaka, Zambia',
     'website' => 'https://www.rdmscientific.com',
 
