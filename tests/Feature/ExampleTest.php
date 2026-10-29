@@ -18,4 +18,17 @@ class ExampleTest extends TestCase
             ->assertSee('Plot No. 1 Chisokone Road', false)
             ->assertSee('aria-current="page"', false);
     }
+
+    public function test_about_page_has_history_mission_vision_and_values(): void
+    {
+        $this->get('/about')
+            ->assertOk()
+            ->assertSee('<title>About Us | RDM Scientific Products Limited', false)
+            ->assertSee('Mr. R. M. Namala', false)
+            ->assertSee('Dr. Kenneth Kaunda', false)
+            ->assertSee('Our mission is to stock and distribute', false)
+            ->assertSee('To remain the leading supplier', false)
+            ->assertSee('Integrity')->assertSee('Innovation')
+            ->assertSee('aria-current="page"', false);
+    }
 }

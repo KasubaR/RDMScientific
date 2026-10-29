@@ -9,7 +9,7 @@
   </button>
   <nav class="main" id="nav" aria-label="Main">
     <a href="{{ route('home') }}" @if(request()->routeIs('home')) aria-current="page" @endif>Home</a>
-    <a href="{{ url('/about') }}">About Us</a>
+    <a href="{{ route('about') }}" @if(request()->routeIs('about')) aria-current="page" @endif>About Us</a>
     <a href="{{ url('/products') }}">Products &amp; Applications</a>
     <a href="{{ url('/contact') }}">Contact Us</a>
   </nav>

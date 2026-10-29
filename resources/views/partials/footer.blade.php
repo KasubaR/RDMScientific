@@ -10,7 +10,7 @@
       <h4>Quick links</h4>
       <ul>
         <li><a href="{{ route('home') }}">Home</a></li>
-        <li><a href="{{ url('/about') }}">About Us</a></li>
+        <li><a href="{{ route('about') }}">About Us</a></li>
         <li><a href="{{ url('/products') }}">Products &amp; Applications</a></li>
         <li><a href="{{ url('/contact') }}">Contact Us</a></li>
       </ul>
