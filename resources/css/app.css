@@ -192,10 +192,10 @@ footer.foot{background:var(--navy);color:var(--ink-on-dark);border-radius:var(--
 .vm>div{border:1px solid var(--line);border-radius:var(--radius-md);padding:28px;background:#fff;display:flex;flex-direction:column;gap:10px}
 .vm h3{font-size:13px;font-weight:800;letter-spacing:1.5px;color:var(--red-dark)}
 .vm p{line-height:1.7}
-.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.values>div{background:var(--blush);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:6px}
-.values b{color:var(--navy);font-size:16px}
-.values span{font-size:14px;color:var(--muted)}
+.values{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.values>li{background:var(--blush);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.values b{color:var(--navy);font-size:18px;font-weight:800}
+.values span{font-size:14px;line-height:1.6;color:var(--muted)}
 
 .split{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:center}
 .split img{width:100%;border-radius:var(--radius-md);max-height:440px;object-fit:cover}
@@ -253,6 +253,7 @@ form.quote{display:flex;flex-direction:column;gap:16px}
 
 /* 6. Responsive ------------------------------------------------------------ */
 @media (max-width:860px){
+  .values{grid-template-columns:repeat(2,minmax(0,1fr))}
   .app-layout{grid-template-columns:1fr}
   .menu-btn{display:flex;margin-left:auto}
   header.top{position:static}
@@ -268,6 +269,7 @@ form.quote{display:flex;flex-direction:column;gap:16px}
   .page-hero{padding:36px 24px}
 }
 @media (max-width:480px){
+  .values{grid-template-columns:1fr}
   .app-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
   .app-card{padding:16px}
   .app-card h4{font-size:15px}
