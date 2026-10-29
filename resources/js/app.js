@@ -68,3 +68,53 @@
   });
   box.classList.add('is-scrolling');
 })();
+
+/* products page: search + category filter */
+(function () {
+  var root = document.querySelector('[data-discover]');
+  if (!root) return;
+
+  var input = root.querySelector('[data-discover-q]');
+  var chips = root.querySelectorAll('[data-cat]');
+  var status = root.querySelector('[data-discover-status]');
+  var items = document.querySelectorAll('[data-item]');
+  var grids = document.querySelectorAll('[data-discover-grid]');
+  var form = root.querySelector('[data-discover-form]');
+  var activeCat = 'all';
+
+  function apply() {
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+
+    items.forEach(function (item) {
+      var cats = item.getAttribute('data-cats').split(' ');
+      var matchesCat = activeCat === 'all' || cats.indexOf(activeCat) !== -1;
+      var matchesText = q === '' || item.getAttribute('data-text').indexOf(q) !== -1;
+      var visible = matchesCat && matchesText;
+      item.hidden = !visible;
+      if (visible) { shown++; }
+    });
+
+    grids.forEach(function (grid) {
+      var empty = grid.parentNode.querySelector('[data-empty]');
+      var any = grid.querySelectorAll('[data-item]:not([hidden])').length > 0;
+      if (empty) { empty.hidden = any; }
+    });
+
+    var filtering = q !== '' || activeCat !== 'all';
+    status.textContent = filtering
+      ? shown + (shown === 1 ? ' result' : ' results') + ' across categories, applications and industries'
+      : '';
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      activeCat = chip.getAttribute('data-cat');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+      apply();
+    });
+  });
+
+  input.addEventListener('input', apply);
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+})();

@@ -9,7 +9,7 @@
 
 <section class="page-hero" aria-labelledby="h1">
   <span class="crumb">About Us</span>
-  <h1 id="h1">Trusted laboratory partner <span>since 1984</span></h1>
+  <h1 id="h1">Trusted laboratory partner since 1984</h1>
   <p>RDM Scientific Products Limited supplies laboratory solutions across Zambia and Central Africa, including the Democratic Republic of Congo.</p>
 </section>
 
@@ -21,7 +21,7 @@
       <p>Founded in 1984, RDM Scientific Products Limited has built a strong reputation as a trusted provider of laboratory solutions across Zambia and Central Africa, including the Democratic Republic of Congo (DRC).</p>
       <p>With over three decades of experience, RDM has grown into the region's leading supplier of laboratory products, serving a wide array of industries, including mining, manufacturing, healthcare and research. We provide laboratory products and equipment through our supplier relationships, backed by world-class customer service and a commitment to supporting scientific progress and industrial development.</p>
       <div class="links-row">
-        <a href="{{ url('/products') }}" class="btn btn-red">Our Products <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="{{ route('products') }}" class="btn btn-red">Our Products <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <a href="{{ url('/contact') }}" class="btn btn-ghost">Contact Us</a>
       </div>
     </div>
@@ -40,7 +40,7 @@
   </div>
   <div class="split">
     <figure class="figure">
-      <img src="{{ asset('images/history-1989.jpg') }}" alt="Historical photograph from the 1989 State House exhibition where the RDM founder demonstrated the Rotavapor" width="900" height="1100" loading="lazy">
+      <img src="{{ asset('images/history-1989.jpg') }}" alt="Historical photograph from the 1989 State House exhibition where the RDM founder demonstrated the Rotavapor" width="869" height="1100" loading="lazy">
       <figcaption>1989: the late Mr. R. M. Namala demonstrates the Rotavapor at a State House exhibition.</figcaption>
     </figure>
     <div>
@@ -119,7 +119,7 @@
     <li><img src="{{ asset('images/brands/duran.webp') }}" alt="DURAN Group" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/brand.webp') }}" alt="BRAND" height="52" loading="lazy"></li>
   </ul>
-  <div class="center"><a href="{{ url('/products') }}#brands" class="btn btn-ghost">See brands by product</a></div>
+  <div class="center"><a href="{{ route('products') }}#brands" class="btn btn-ghost">See brands by product</a></div>
 </section>
 
 <section class="card sec commit" aria-labelledby="cm-h">

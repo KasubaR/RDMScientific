@@ -10,10 +10,10 @@
 <!-- HERO -->
 <section class="hero" aria-labelledby="h1">
   <div class="hero-in">
-    <h1 id="h1">Reliable Laboratory Solutions for <em>Science and Industry</em></h1>
+    <h1 id="h1">Reliable Laboratory Solutions for Science and Industry</h1>
     <p>Chemicals, reagents, glassware, consumables and equipment for laboratories across Zambia and the DRC, backed by expert advice and authorized Merck-Sigma Aldrich supply.</p>
     <div class="hero-cta">
-      <a href="{{ url('/products') }}" class="btn btn-white">Explore Products</a>
+      <a href="{{ route('products') }}" class="btn btn-white">Explore Products</a>
       <a href="{{ url('/contact') }}#quote" class="btn btn-ghost">Request a Quote</a>
     </div>
     <div class="trust">
@@ -31,19 +31,19 @@
     <p>Everything your laboratory needs, from one trusted supplier.</p>
   </div>
   <div class="grid cats">
-    <a class="cat" href="{{ url('/products') }}#chemicals">
+    <a class="cat" href="{{ route('products') }}#chemicals">
       <div class="ph"><img src="{{ asset('images/hero-lab.jpg') }}" alt="Pipette dispensing reagent into laboratory wells" width="700" height="500" loading="lazy"></div>
       <div class="tx"><h3>Laboratory Chemicals &amp; Reagents</h3><p>High-purity chemicals and reagents for analysis, synthesis and research.</p><span class="more">View catalogue &rarr;</span></div>
     </a>
-    <a class="cat" href="{{ url('/products') }}#glassware">
+    <a class="cat" href="{{ route('products') }}#glassware">
       <div class="ph"><img src="{{ asset('images/glassware.jpg') }}" alt="Laboratory flasks, beakers and cylinders" width="700" height="466" loading="lazy"></div>
       <div class="tx"><h3>Laboratory Glassware</h3><p>Flasks, beakers, cylinders and more for precise lab work.</p><span class="more">View catalogue &rarr;</span></div>
     </a>
-    <a class="cat" href="{{ url('/products') }}#consumables">
+    <a class="cat" href="{{ route('products') }}#consumables">
       <div class="ph"><img src="{{ asset('images/consumables.jpg') }}" alt="Syringe filters and syringes" width="700" height="466" loading="lazy"></div>
       <div class="tx"><h3>Laboratory Consumables</h3><p>Filters, syringes, filter papers and everyday lab essentials.</p><span class="more">View catalogue &rarr;</span></div>
     </a>
-    <a class="cat" href="{{ url('/products') }}#equipment">
+    <a class="cat" href="{{ route('products') }}#equipment">
       <div class="ph"><img src="{{ asset('images/equipment.jpg') }}" alt="Water purification system and consumable box" width="700" height="393" loading="lazy"></div>
       <div class="tx"><h3>Laboratory Equipment</h3><p>Instruments and purification systems from leading manufacturers.</p><span class="more">View catalogue &rarr;</span></div>
     </a>
@@ -103,7 +103,7 @@
         <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg><span>Water Utilities</span></li>
         <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 3 7h18z"/></svg><span>Government &amp; Contract Labs</span></li>
       </ul>
-      <a href="{{ url('/products') }}#applications" class="btn btn-white">See all applications</a>
+      <a href="{{ route('products') }}#applications" class="btn btn-white">See all applications</a>
     </aside>
   </div>
 </section>
@@ -131,7 +131,7 @@
       <li><img src="{{ asset('images/brands/brand.webp') }}" alt="BRAND" height="52" loading="lazy"></li>
     </ul>
   </div>
-  <div class="center"><a href="{{ url('/products') }}#brands" class="btn btn-ghost">View all brands</a></div>
+  <div class="center"><a href="{{ route('products') }}#brands" class="btn btn-ghost">View all brands</a></div>
 </section>
 
 <!-- WHY CHOOSE -->

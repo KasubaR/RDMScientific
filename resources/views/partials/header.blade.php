@@ -10,7 +10,7 @@
   <nav class="main" id="nav" aria-label="Main">
     <a href="{{ route('home') }}" @if(request()->routeIs('home')) aria-current="page" @endif>Home</a>
     <a href="{{ route('about') }}" @if(request()->routeIs('about')) aria-current="page" @endif>About Us</a>
-    <a href="{{ url('/products') }}">Products &amp; Applications</a>
+    <a href="{{ route('products') }}" @if(request()->routeIs('products')) aria-current="page" @endif>Products &amp; Applications</a>
     <a href="{{ url('/contact') }}">Contact Us</a>
   </nav>
   <a href="{{ url('/contact') }}#quote" class="btn btn-red">Request a Quote</a>

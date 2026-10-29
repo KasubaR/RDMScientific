@@ -11,18 +11,19 @@
       <ul>
         <li><a href="{{ route('home') }}">Home</a></li>
         <li><a href="{{ route('about') }}">About Us</a></li>
-        <li><a href="{{ url('/products') }}">Products &amp; Applications</a></li>
+        <li><a href="{{ route('products') }}">Products &amp; Applications</a></li>
         <li><a href="{{ url('/contact') }}">Contact Us</a></li>
       </ul>
     </div>
     <div>
       <h4>Products</h4>
       <ul>
-        <li><a href="{{ url('/products') }}#chemicals">Chemicals &amp; Reagents</a></li>
-        <li><a href="{{ url('/products') }}#glassware">Glassware</a></li>
-        <li><a href="{{ url('/products') }}#consumables">Consumables</a></li>
-        <li><a href="{{ url('/products') }}#equipment">Equipment</a></li>
-        <li><a href="{{ url('/products') }}#brands">Brands</a></li>
+        <li><a href="{{ route('products') }}#chemicals">Chemicals</a></li>
+        <li><a href="{{ route('products') }}#reagents">Reagents</a></li>
+        <li><a href="{{ route('products') }}#glassware">Glassware</a></li>
+        <li><a href="{{ route('products') }}#consumables">Consumables</a></li>
+        <li><a href="{{ route('products') }}#equipment">Equipment</a></li>
+        <li><a href="{{ route('products') }}#brands">Brands</a></li>
       </ul>
     </div>
     <div>
