@@ -14,7 +14,7 @@
     <p>Chemicals, reagents, glassware, consumables and equipment for laboratories across Zambia and the DRC, backed by expert advice and authorized Merck-Sigma Aldrich supply.</p>
     <div class="hero-cta">
       <a href="{{ route('products') }}" class="btn btn-white">Explore Products</a>
-      <a href="{{ url('/contact') }}#quote" class="btn btn-ghost">Request a Quote</a>
+      <a href="{{ route('contact') }}#quote" class="btn btn-ghost">Request a Quote</a>
     </div>
     <div class="trust">
       <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFBD59" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Authorized Merck-Sigma Aldrich dealer</span>
@@ -109,7 +109,7 @@
 </section>
 
 <!-- BRANDS -->
-<section class="card sec" aria-labelledby="br-h">
+<section class="card sec" id="brands" aria-labelledby="br-h">
   <div class="sec-head">
     <span class="eyebrow">Brands &amp; partners</span>
     <h2 class="sec-title" id="br-h">World-Class Manufacturers</h2>
@@ -174,7 +174,7 @@
     <p>Tell us what you need and we will respond with availability and pricing.</p>
   </div>
   <div class="cta-actions">
-    <a href="{{ url('/contact') }}#quote" class="btn btn-white">Request a Quote</a>
+    <a href="{{ route('contact') }}#quote" class="btn btn-white">Request a Quote</a>
     <a href="tel:{{ config('rdm.phone_href') }}" class="btn btn-ghost">Call {{ config('rdm.phone') }}</a>
   </div>
 </section>

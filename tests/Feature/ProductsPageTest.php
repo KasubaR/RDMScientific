@@ -8,7 +8,7 @@ class ProductsPageTest extends TestCase
 {
     public function test_products_page_renders_with_seo_title_and_active_nav(): void
     {
-        $this->get('/products')
+        $this->get('/products-applications')
             ->assertOk()
             ->assertSee('<title>Products &amp; Applications | RDM Scientific Products Limited', false)
             ->assertSee('aria-current="page"', false)
@@ -17,7 +17,7 @@ class ProductsPageTest extends TestCase
 
     public function test_every_category_from_the_profile_has_a_section(): void
     {
-        $response = $this->get('/products')->assertOk();
+        $response = $this->get('/products-applications')->assertOk();
 
         foreach (['chemicals', 'reagents', 'glassware', 'consumables', 'equipment'] as $id) {
             $response->assertSee('id="'.$id.'"', false);
@@ -26,7 +26,7 @@ class ProductsPageTest extends TestCase
 
     public function test_every_application_from_the_profile_is_listed(): void
     {
-        $response = $this->get('/products')->assertOk();
+        $response = $this->get('/products-applications')->assertOk();
 
         foreach ([
             'Analytical Chemistry',
@@ -47,7 +47,7 @@ class ProductsPageTest extends TestCase
 
     public function test_all_nine_client_sectors_are_listed(): void
     {
-        $response = $this->get('/products')->assertOk();
+        $response = $this->get('/products-applications')->assertOk();
 
         foreach (config('catalog.industries') as $industry) {
             $response->assertSee($industry['name']);
@@ -58,7 +58,7 @@ class ProductsPageTest extends TestCase
 
     public function test_enquiry_links_carry_the_selected_item_to_the_quote_form(): void
     {
-        $this->get('/products')
+        $this->get('/products-applications')
             ->assertSee('/contact?application=analytical-chemistry#quote', false)
             ->assertSee('/contact?industry=mining#quote', false)
             ->assertSee('/contact?category=glassware#quote', false);
@@ -66,7 +66,7 @@ class ProductsPageTest extends TestCase
 
     public function test_catalogue_is_enquiry_only_with_no_prices_or_cart(): void
     {
-        $this->get('/products')
+        $this->get('/products-applications')
             ->assertDontSee('Add to cart')
             ->assertDontSee('Checkout')
             ->assertDontSee('In stock');

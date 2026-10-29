@@ -22,7 +22,7 @@
       <p>With over three decades of experience, RDM has grown into the region's leading supplier of laboratory products, serving a wide array of industries, including mining, manufacturing, healthcare and research. We provide laboratory products and equipment through our supplier relationships, backed by world-class customer service and a commitment to supporting scientific progress and industrial development.</p>
       <div class="links-row">
         <a href="{{ route('products') }}" class="btn btn-red">Our Products <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        <a href="{{ url('/contact') }}" class="btn btn-ghost">Contact Us</a>
+        <a href="{{ route('contact') }}" class="btn btn-ghost">Contact Us</a>
       </div>
     </div>
     <ul class="facts">
@@ -136,7 +136,7 @@
     <p>Tell us what you need and we will respond with availability and pricing.</p>
   </div>
   <div class="cta-actions">
-    <a href="{{ url('/contact') }}#quote" class="btn btn-white">Request a Quote</a>
+    <a href="{{ route('contact') }}#quote" class="btn btn-white">Request a Quote</a>
     <a href="tel:{{ config('rdm.phone_href') }}" class="btn btn-ghost">Call {{ config('rdm.phone') }}</a>
   </div>
 </section>

@@ -8,7 +8,7 @@
 @php
     $categoryNames = collect($catalog['categories'])->pluck('name', 'id');
     $applicationNames = collect($catalog['applications'])->pluck('name', 'id');
-    $enquire = fn (array $query) => url('/contact').'?'.http_build_query($query).'#quote';
+    $enquire = fn (array $query) => route('contact').'?'.http_build_query($query).'#quote';
 @endphp
 
 @section('content')
@@ -18,7 +18,7 @@
   <h1 id="h1">Laboratory supplies for every application</h1>
   <p>Chemicals, reagents, glassware, consumables and equipment, matched to the scientific work they support. Browse by category, application or industry, then send us an enquiry.</p>
   <div class="links-row">
-    <a href="{{ url('/contact').'#quote' }}" class="btn btn-red">Request a Quote <x-icon name="arrow" :size="16" /></a>
+    <a href="{{ route('contact').'#quote' }}" class="btn btn-red">Request a Quote <x-icon name="arrow" :size="16" /></a>
     <a href="#applications" class="btn btn-ghost">Browse applications</a>
   </div>
 </section>
@@ -135,7 +135,7 @@
 <section class="card sec" id="resources" aria-labelledby="res-h">
   <div class="sec-head">
     <span class="eyebrow">Resources</span>
-    <h2 class="sec-title" id="res-h">Catalogues, datasheets and safety documents</h2>
+    <h2 class="sec-title" id="res-h">Resources &amp; Downloads</h2>
     <p>Technical documents are supplied on request, so you always receive the current version from the manufacturer.</p>
   </div>
   <ul class="caps">
@@ -156,7 +156,7 @@
     <p>Tell us your application and our team will recommend the right products and send you a quote.</p>
   </div>
   <div class="cta-actions">
-    <a href="{{ url('/contact').'#quote' }}" class="btn btn-white">Request a Quote</a>
+    <a href="{{ route('contact').'#quote' }}" class="btn btn-white">Request a Quote</a>
     <a href="tel:{{ config('rdm.phone_href') }}" class="btn btn-ghost">Call {{ config('rdm.phone') }}</a>
   </div>
 </section>

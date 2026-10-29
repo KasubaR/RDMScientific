@@ -287,6 +287,31 @@ form.quote{display:flex;flex-direction:column;gap:16px}
 .acard .more:hover,.icard .more:hover{color:var(--red)}
 .pcat,.acard,.icard{scroll-margin-top:96px}
 
+/* contact page */
+.contact-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.contact-cards .crow{background:var(--blush);border:1px solid var(--line);border-radius:20px;padding:22px}
+.contact-cards .crow b{display:block;color:var(--navy);margin-bottom:2px}
+.contact-cards .crow a,.contact-cards .crow address{font-size:15px;font-style:normal;color:var(--ink);word-break:break-word}
+.contact-cards .crow a{color:var(--red-dark);font-weight:600}
+.contact-cards .crow address{display:block;margin-bottom:6px}
+.enquiry-form{max-width:860px;width:100%;margin-inline:auto}
+.req{color:var(--red-dark);font-weight:800}
+.hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.field .err{font-size:13px;font-weight:600;color:var(--red-dark)}
+.field input[aria-invalid="true"],.field select[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:var(--red-dark);background:#FFF5F5}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer}
+.check input{width:22px;height:22px;flex:none;margin-top:1px;accent-color:var(--red)}
+.check a{color:var(--red-dark);font-weight:700;text-decoration:underline}
+.fine{font-size:13px;color:var(--muted)}
+.alert{max-width:860px;width:100%;margin-inline:auto;border-radius:18px;padding:18px 22px;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.alert ul{margin:4px 0 0;padding-left:20px}
+.alert-success{background:#EAF6E5;border:1px solid var(--green);color:#1B4F06}
+.alert-error{background:var(--blush);border:1px solid var(--red-dark);color:#7A0D0D}
+.alert:focus{outline:3px solid var(--navy);outline-offset:2px}
+.prose{max-width:760px;margin-inline:auto;display:flex;flex-direction:column;gap:14px;line-height:1.7}
+.prose ul{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
+.prose a{color:var(--red-dark);font-weight:700}
+
 /* 6. Responsive ------------------------------------------------------------ */
 @media (max-width:860px){
   .values{grid-template-columns:repeat(2,minmax(0,1fr))}

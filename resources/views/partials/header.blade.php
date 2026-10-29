@@ -11,7 +11,7 @@
     <a href="{{ route('home') }}" @if(request()->routeIs('home')) aria-current="page" @endif>Home</a>
     <a href="{{ route('about') }}" @if(request()->routeIs('about')) aria-current="page" @endif>About Us</a>
     <a href="{{ route('products') }}" @if(request()->routeIs('products')) aria-current="page" @endif>Products &amp; Applications</a>
-    <a href="{{ url('/contact') }}">Contact Us</a>
+    <a href="{{ route('contact') }}" @if(request()->routeIs('contact')) aria-current="page" @endif>Contact Us</a>
   </nav>
-  <a href="{{ url('/contact') }}#quote" class="btn btn-red">Request a Quote</a>
+  <a href="{{ route('contact') }}#quote" class="btn btn-red">Request a Quote</a>
 </header>
