@@ -5,6 +5,7 @@
         <span class="hexes" aria-hidden="true"><span class="hex"><i>R</i></span><span class="hex"><i>D</i></span><span class="hex"><i>M</i></span></span>
       </a>
       <p class="about">RDM Scientific Products Limited. Reliable laboratory solutions for science and industry since 1984.</p>
+      <p class="about"><b>Authorised Merck and Metrohm Dealer</b><br><a href="https://www.merckgroup.com/" target="_blank" rel="noopener">merckgroup.com</a> &middot; <a href="https://www.metrohm.com/" target="_blank" rel="noopener">metrohm.com</a></p>
     </div>
     <div>
       <h4>Quick links</h4>

@@ -14,7 +14,7 @@ class ExampleTest extends TestCase
             ->assertSee('Reliable Laboratory Solutions for', false)
             ->assertSee('<title>RDM Scientific Products Limited', false)
             ->assertSee('tel:+260977783636', false)
-            ->assertSee('mailto:sales@rdmscientific.com', false)
+            ->assertSee('mailto:info@rdmscientific.co.zm', false)
             ->assertSee('Plot No. 1 Chisokone Road', false)
             ->assertSee('aria-current="page"', false);
     }

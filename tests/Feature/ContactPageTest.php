@@ -40,7 +40,7 @@ class ContactPageTest extends TestCase
             ->assertOk()
             ->assertSee('<title>Contact Us | RDM Scientific Products Limited', false)
             ->assertSee('tel:+260977783636', false)
-            ->assertSee('mailto:sales@rdmscientific.com', false)
+            ->assertSee('mailto:info@rdmscientific.co.zm', false)
             ->assertSee('Plot No. 1 Chisokone Road')
             ->assertDontSee('<b>Website</b>', false)
             ->assertSee('Privacy notice')
@@ -75,7 +75,7 @@ class ContactPageTest extends TestCase
 
         $this->assertDatabaseHas('enquiries', ['email' => 'buyer@example.com', 'type' => 'quotation']);
 
-        Mail::assertSent(NewEnquiry::class, fn (NewEnquiry $mail) => $mail->hasTo('sales@rdmscientific.com')
+        Mail::assertSent(NewEnquiry::class, fn (NewEnquiry $mail) => $mail->hasTo('info@rdmscientific.co.zm')
             && $mail->hasReplyTo('buyer@example.com'));
         Mail::assertNotSent(EnquiryReceived::class);
     }

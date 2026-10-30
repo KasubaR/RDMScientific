@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'About Us | RDM Scientific Products Limited')
-@section('description', 'Founded in 1984, RDM Scientific Products Limited is a trusted laboratory supplier in Zambia and Central Africa, including the DRC, and an authorized Merck-Sigma Aldrich dealer.')
+@section('description', 'Founded in 1984, RDM Scientific Products Limited is a trusted laboratory supplier in Zambia and Central Africa, including the DRC, and an Authorised Merck and Metrohm Dealer.')
 @section('og_title', 'About Us | RDM Scientific Products Limited')
 @section('og_description', 'Over three decades supplying laboratory chemicals, reagents, glassware, consumables and equipment across Zambia and the DRC.')
 
@@ -48,7 +48,7 @@
       <ol class="timeline">
         <li><b>1984</b><span>RDM Scientific Products Limited is founded.</span></li>
         <li><b>1989</b><span>The founder demonstrates the Rotavapor to Dr. Kenneth Kaunda at a State House exhibition.</span></li>
-        <li><b>Today</b><span>Over three decades of experience as an authorized Merck-Sigma Aldrich dealer serving Zambia and the DRC.</span></li>
+        <li><b>Today</b><span>Over three decades of experience as an Authorised Merck and Metrohm Dealer serving Zambia and the DRC.</span></li>
       </ol>
     </div>
   </div>
@@ -103,7 +103,7 @@
   <div class="sec-head">
     <span class="eyebrow">Our brands</span>
     <h2 class="sec-title" id="br-h">Partnerships with leading manufacturers</h2>
-    <p>As authorized dealers for Merck-Sigma Aldrich, we offer an extensive range of high-quality life science products and laboratory equipment from one of the world's leading manufacturers. This partnership gives our customers access to cutting-edge chemicals, reagents and supplies renowned for their precision, reliability and innovation.</p>
+    <p>As an Authorised Merck and Metrohm Dealer, we offer an extensive range of high-quality life science products and laboratory equipment from two of the world's leading manufacturers. These partnerships give our customers access to cutting-edge chemicals, reagents, supplies and analytical instruments renowned for their precision, reliability and innovation.</p>
   </div>
   <ul class="logo-grid">
     <li><img src="{{ asset('images/brands/merck.webp') }}" alt="Merck" height="52" loading="lazy"></li>
@@ -119,8 +119,14 @@
     <li><img src="{{ asset('images/brands/duran.webp') }}" alt="DURAN Group" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/brand.webp') }}" alt="BRAND" height="52" loading="lazy"></li>
   </ul>
-  <div class="center"><a href="{{ route('products') }}#brands" class="btn btn-ghost">See brands by product</a></div>
+  <div class="center links-row">
+    <a href="https://www.merckgroup.com/" class="btn btn-ghost" target="_blank" rel="noopener">Visit merckgroup.com</a>
+    <a href="https://www.metrohm.com/" class="btn btn-ghost" target="_blank" rel="noopener">Visit metrohm.com</a>
+    <a href="{{ route('products') }}#brands" class="btn btn-ghost">See brands by product</a>
+  </div>
 </section>
+
+@include('partials.clients')
 
 <section class="card sec commit" aria-labelledby="cm-h">
   <div class="sec-head">
