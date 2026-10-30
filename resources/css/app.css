@@ -397,3 +397,6 @@ form.quote{display:flex;flex-direction:column;gap:16px}
 .logo-wall{list-style:none;margin:0;padding:0;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
 .logo-wall li{display:flex;align-items:center;justify-content:center;height:96px;padding:12px;border:1px solid var(--line);border-radius:var(--radius-sm);background:#fff}
 .logo-wall img{max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain}
+.maker-grid{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1000px){.maker-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.maker-grid{grid-template-columns:1fr}}

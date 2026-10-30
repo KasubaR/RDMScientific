@@ -17,8 +17,6 @@
         ['id' => 'equipment', 'name' => 'Ion Chromatography', 'image' => 'metrohm/ion-chromatography.jpg', 'alt' => 'Metrohm ion chromatograph', 'text' => 'Ion chromatographs, columns, detectors and automation for routine and research use.'],
         ['id' => 'equipment', 'name' => 'Karl Fischer Titrators', 'image' => 'metrohm/karl-fischer.jpg', 'alt' => 'Metrohm Karl Fischer titrator', 'text' => 'Volumetric and coulometric water content determination in liquids, solids and gases.'],
         ['id' => 'equipment', 'name' => 'pH, Ion & Conductivity Meters', 'image' => 'metrohm/ph-meters.jpg', 'alt' => 'Metrohm 949 pH meter', 'text' => 'Precision pH, ORP, ion, conductivity and dissolved oxygen meters for lab and field.'],
-        ['id' => 'equipment', 'name' => 'Voltammetry', 'image' => 'metrohm/voltammetry.jpg', 'alt' => 'Metrohm Professional VA analyzer', 'text' => 'Trace metal analysis with Professional VA, CVS and portable VA analyzers.'],
-        ['id' => 'equipment', 'name' => 'NIR Spectroscopy', 'image' => 'metrohm/nir.jpg', 'alt' => 'Metrohm OMNIS NIR analyzer', 'text' => 'Non-destructive near-infrared analysis of liquids, solids, pastes and tablets.'],
     ];
 @endphp
 
