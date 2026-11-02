@@ -109,16 +109,13 @@ footer.foot{background:var(--navy);color:var(--ink-on-dark);border-radius:var(--
 .hero-in{position:relative;z-index:1;max-width:620px;display:flex;flex-direction:column;gap:22px}
 .hero h1{font-size:clamp(38px,5.2vw,60px);line-height:1.04;font-weight:800;letter-spacing:-1.5px;color:var(--navy)}
 .hero p{font-size:19px;max-width:540px;color:var(--ink)}
-.hero .dealer-badge{align-self:flex-start}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero-dealer{width:min(320px,100%);height:auto;margin-top:6px}
 .hero-art{position:relative;align-self:stretch;min-height:460px;margin:-56px -56px -56px 0;background:url('/images/hero/hero-shape.svg') right center/contain no-repeat}
 .hero-art img{position:absolute;max-width:none}
 .art-instrument{right:6%;top:9%;width:50%;height:auto;border-radius:22px;border:6px solid #fff;box-shadow:0 14px 34px rgba(185,20,20,.35)}
 .art-bottles{left:6%;bottom:7%;width:34%;height:auto;filter:drop-shadow(0 12px 18px rgba(34,36,68,.35))}
 .art-box{right:1%;bottom:4%;width:56%;height:auto;border-radius:16px;border:5px solid #fff;box-shadow:0 12px 28px rgba(34,36,68,.28)}
-.trust{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:6px;font-size:14px;font-weight:600}
-.trust span{display:flex;align-items:center;gap:8px}
-.trust svg{flex:none}
 
 .cats{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .cat{border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;background:#fff;display:flex;flex-direction:column;box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s,border-color .2s;color:var(--ink)}
@@ -389,7 +386,6 @@ form.quote{display:flex;flex-direction:column;gap:16px}
 }
 
 /* Dealer, Merck/Metrohm ranges, clients */
-.dealer-badge{display:inline-flex;align-items:center;gap:8px;margin:0 0 14px;padding:8px 16px;border-radius:999px;background:var(--amber);color:var(--navy);font-size:15px;font-weight:800}
 .dealer-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .dealer-card{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:26px;border:1px solid var(--line);border-radius:var(--radius-md);background:#fff;box-shadow:var(--shadow-sm)}
 .dealer-card img{height:52px;width:auto}

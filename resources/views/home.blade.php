@@ -25,17 +25,13 @@
 <!-- HERO -->
 <section class="hero" aria-labelledby="h1">
   <div class="hero-in">
-    <p class="dealer-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>Authorised Merck and Metrohm Dealer</p>
     <h1 id="h1">Reliable Laboratory Solutions for Science and Industry</h1>
     <p>Chemicals, reagents, glassware, consumables and equipment for laboratories across Zambia and the DRC, backed by expert advice and authorised Merck and Metrohm supply.</p>
     <div class="hero-cta">
       <a href="{{ route('products') }}" class="btn btn-red">Explore Products</a>
       <a href="{{ route('contact') }}#quote" class="btn btn-ghost">Request a Quote</a>
     </div>
-    <div class="trust">
-      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E81C1C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Authorised Merck and Metrohm Dealer</span>
-      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E81C1C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Serving Zambia &amp; DRC</span>
-    </div>
+    <img class="hero-dealer" src="{{ asset('images/logos/authorised-dealer.svg') }}" alt="Authorised Merck and Metrohm Dealer" width="320" height="69">
   </div>
   <div class="hero-art" aria-hidden="true">
     <img class="art-instrument" src="{{ asset('images/hero/metrohm-instrument.jpg') }}" alt="" width="430" height="477">
