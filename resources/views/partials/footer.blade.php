@@ -5,7 +5,6 @@
         <img src="{{ asset('images/logos/rdm-footer-logo.svg') }}" alt="RDM Scientific Products Limited, Authorised Merck and Metrohm Dealer" width="240" height="142" loading="lazy">
       </a>
       <p class="about">RDM Scientific Products Limited. Reliable laboratory solutions for science and industry since 1984.</p>
-      <p class="about"><b>Authorised Merck and Metrohm Dealer</b><br><a href="https://www.merckgroup.com/" target="_blank" rel="noopener">merckgroup.com</a> &middot; <a href="https://www.metrohm.com/" target="_blank" rel="noopener">metrohm.com</a></p>
     </div>
     <div>
       <h4>Quick links</h4>
