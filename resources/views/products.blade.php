@@ -122,12 +122,12 @@
 <section class="card sec" id="brands" aria-labelledby="br-h">
   <div class="sec-head">
     <span class="eyebrow">Our brands</span>
-    <h2 class="sec-title" id="br-h">Authorized Merck-Sigma Aldrich dealer</h2>
+    <h2 class="sec-title" id="br-h">Authorised Merck and Metrohm Dealer</h2>
     <p>Our partnership ensures access to cutting-edge chemicals, reagents and supplies renowned for their precision, reliability and innovation, alongside products from other leading manufacturers.</p>
   </div>
   <ul class="logo-grid">
     @foreach ($catalog['brands'] as [$file, $label])
-      <li><img src="{{ asset('images/brands/'.$file.'.webp') }}" alt="{{ $label }}" height="52" loading="lazy"></li>
+      <li><img src="{{ $file === 'merck' ? asset('images/logos/merck-logo.svg') : asset('images/brands/'.$file.'.webp') }}" alt="{{ $label }}" height="52" loading="lazy"></li>
     @endforeach
   </ul>
 </section>

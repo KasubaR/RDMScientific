@@ -53,20 +53,21 @@
   items.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
 })();
 
-/* brand logo marquee: duplicate the track so the loop is seamless */
+/* logo marquees (brands, clients): duplicate each track so the loop is seamless */
 (function () {
-  var box = document.querySelector('.marquee');
-  var track = box && box.querySelector('.marquee-track');
-  if (!track) return;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-  if (reduce.matches) { track.classList.add('marquee-static'); return; }
-  Array.prototype.slice.call(track.children).forEach(function (li) {
-    var clone = li.cloneNode(true);
-    clone.setAttribute('aria-hidden', 'true');
-    clone.querySelector('img').alt = '';
-    track.appendChild(clone);
+  Array.prototype.slice.call(document.querySelectorAll('.marquee')).forEach(function (box) {
+    var track = box.querySelector('.marquee-track');
+    if (!track) return;
+    if (reduce.matches) { track.classList.add('marquee-static'); return; }
+    Array.prototype.slice.call(track.children).forEach(function (li) {
+      var clone = li.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      clone.querySelector('img').alt = '';
+      track.appendChild(clone);
+    });
+    box.classList.add('is-scrolling');
   });
-  box.classList.add('is-scrolling');
 })();
 
 /* products page: search + category filter */

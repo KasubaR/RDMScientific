@@ -48,12 +48,12 @@
   </div>
   <div class="grid dealer-grid">
     <div class="dealer-card">
-      <img src="{{ asset('images/brands/merck.webp') }}" alt="Merck" height="52" loading="lazy">
+      <img src="{{ asset('images/logos/merck-logo.svg') }}" alt="Merck" width="233" height="52">
       <p>Laboratory chemicals, reagents, water purification, filtration and life science products from Merck, including Sigma-Aldrich, Millipore and Supelco.</p>
       <a href="https://www.merckgroup.com/" class="btn btn-ghost" target="_blank" rel="noopener">Visit merckgroup.com <x-icon name="arrow" :size="16" /></a>
     </div>
     <div class="dealer-card">
-      <span class="metrohm-word">Metrohm</span>
+      <img src="{{ asset('images/logos/metrohm-logo.svg') }}" alt="Metrohm" width="233" height="52">
       <p>Titration, ion chromatography, Karl Fischer, pH and ion measurement, voltammetry and NIR spectroscopy instruments from Metrohm.</p>
       <a href="https://www.metrohm.com/" class="btn btn-ghost" target="_blank" rel="noopener">Visit metrohm.com <x-icon name="arrow" :size="16" /></a>
     </div>
@@ -193,7 +193,7 @@
   </div>
   <div class="marquee" aria-label="Brands we supply">
     <ul class="marquee-track">
-      <li><img src="{{ asset('images/brands/merck.webp') }}" alt="Merck" height="52" loading="lazy"></li>
+      <li><img src="{{ asset('images/logos/merck-logo.svg') }}" alt="Merck" height="52" loading="lazy"></li>
       <li><img src="{{ asset('images/brands/sigma-aldrich.webp') }}" alt="Sigma-Aldrich" height="52" loading="lazy"></li>
       <li><img src="{{ asset('images/brands/millipore.webp') }}" alt="Millipore" height="52" loading="lazy"></li>
       <li><img src="{{ asset('images/brands/milli-q.webp') }}" alt="Milli-Q" height="52" loading="lazy"></li>

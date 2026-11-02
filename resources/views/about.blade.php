@@ -106,7 +106,7 @@
     <p>As an Authorised Merck and Metrohm Dealer, we offer an extensive range of high-quality life science products and laboratory equipment from two of the world's leading manufacturers. These partnerships give our customers access to cutting-edge chemicals, reagents, supplies and analytical instruments renowned for their precision, reliability and innovation.</p>
   </div>
   <ul class="logo-grid">
-    <li><img src="{{ asset('images/brands/merck.webp') }}" alt="Merck" height="52" loading="lazy"></li>
+    <li><img src="{{ asset('images/logos/merck-logo.svg') }}" alt="Merck" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/sigma-aldrich.webp') }}" alt="Sigma-Aldrich" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/millipore.webp') }}" alt="Millipore" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/milli-q.webp') }}" alt="Milli-Q" height="52" loading="lazy"></li>
