@@ -1,6 +1,6 @@
 <header class="top card wrap">
   <a href="{{ route('home') }}" class="brand" aria-label="RDM Scientific Products Limited home">
-    <img src="{{ asset('images/logos/rdm-logo.svg') }}" alt="RDM Scientific Products Limited" width="117" height="48">
+    <img src="{{ asset('images/logos/rdm-logo-main.svg') }}" alt="RDM Scientific Products Limited" width="358" height="38">
   </a>
   <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav" id="menuBtn">
     <svg class="i-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>

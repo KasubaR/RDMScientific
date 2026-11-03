@@ -34,9 +34,7 @@
     <img class="hero-dealer" src="{{ asset('images/logos/authorised-dealer.svg') }}" alt="Authorised Merck and Metrohm Dealer" width="320" height="69">
   </div>
   <div class="hero-art" aria-hidden="true">
-    <img class="art-instrument" src="{{ asset('images/hero/metrohm-instrument.jpg') }}" alt="" width="430" height="477">
-    <img class="art-bottles" src="{{ asset('images/hero/merck-bottles.webp') }}" alt="" width="178" height="225">
-    <img class="art-box" src="{{ asset('images/equipment.jpg') }}" alt="" width="692" height="389">
+    <img class="art-hero" src="{{ asset('images/hero/hero.webp') }}" alt="" width="1021" height="654">
   </div>
 </section>
 
