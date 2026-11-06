@@ -3,7 +3,7 @@
 @section('title', 'Products & Applications | RDM Scientific Products Limited')
 @section('description', 'Laboratory chemicals, reagents, glassware, consumables and equipment from RDM Scientific Products Limited, for analytical chemistry, diagnostics, environmental testing, research and manufacturing.')
 @section('og_title', 'Products & Applications | RDM Scientific Products Limited')
-@section('og_description', 'Browse laboratory product categories, the applications they support and the industries RDM serves in Zambia and the DRC.')
+@section('og_description', 'Browse laboratory product categories, the applications they support and the industries RDM serves in Zambia and the Region.')
 
 @php
     $categoryNames = collect($catalog['categories'])->pluck('name', 'id');
@@ -53,7 +53,7 @@
   <div class="grid cat-grid" data-discover-grid>
     @foreach ($catalog['categories'] as $category)
       <article class="pcat" id="{{ $category['id'] }}" data-item data-cats="{{ $category['id'] }}" data-text="{{ strtolower($category['name'].' '.$category['summary'].' '.implode(' ', $category['types']).' '.$category['uses']) }}">
-        <div class="ph"><img src="{{ asset('images/'.$category['image']) }}" alt="{{ $category['alt'] }}" loading="lazy"></div>
+        <div class="ph"><img src="{{ asset('images/'.$category['image']) }}" alt="{{ $category['alt'] }}" @if (! empty($category['contain'])) class="contain" @endif loading="lazy"></div>
         <div class="tx">
           <h3>{{ $category['name'] }}</h3>
           <p>{{ $category['summary'] }}</p>
@@ -99,7 +99,7 @@
   <div class="sec-head">
     <span class="eyebrow">Industries we serve</span>
     <h2 class="sec-title" id="ind-h">Experience across nine sectors</h2>
-    <p>RDM understands the laboratory supply needs of the sectors it serves across Zambia and the DRC.</p>
+    <p>RDM understands the laboratory supply needs of the sectors it serves across Zambia and the Region.</p>
   </div>
   <div class="grid icard-grid" data-discover-grid>
     @foreach ($catalog['industries'] as $industry)

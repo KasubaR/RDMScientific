@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
 @section('title', 'RDM Scientific Products Limited | Laboratory Chemicals, Glassware & Equipment in Zambia')
-@section('description', 'RDM Scientific Products Limited, founded in 1984 in Lusaka, supplies laboratory chemicals, reagents, glassware, consumables and equipment across Zambia and the DRC. Authorised Merck and Metrohm Dealer.')
+@section('description', 'RDM Scientific Products Limited, founded in 1984 in Lusaka, supplies laboratory chemicals, reagents, glassware, consumables and equipment across Zambia and the Region. Authorised Merck and Metrohm Dealer.')
 @section('og_title', 'RDM Scientific Products Limited | Reliable Laboratory Solutions')
-@section('og_description', 'Laboratory chemicals, glassware, consumables and equipment for science and industry in Zambia and the DRC.')
+@section('og_description', 'Laboratory chemicals, glassware, consumables and equipment for science and industry in Zambia and the Region.')
 
 @php
     $merckProducts = [
-        ['id' => 'chemicals', 'name' => 'Chemicals & Reagents', 'image' => 'hero-lab.jpg', 'alt' => 'Pipette dispensing reagent into laboratory wells', 'text' => 'Sigma-Aldrich and Supelco chemicals, solvents, standards and reagents for analysis and research.'],
-        ['id' => 'equipment', 'name' => 'Milli-Q Water Purification', 'image' => 'equipment.jpg', 'alt' => 'Milli-Q water purification system', 'text' => 'Laboratory water purification systems and cartridges for pure and ultrapure water.'],
+        ['id' => 'chemicals', 'name' => 'Chemicals & Reagents', 'image' => 'reagents.jpg', 'alt' => 'Glass and plastic laboratory chemical bottles', 'text' => 'Sigma-Aldrich and Supelco chemicals, solvents, standards and reagents for analysis and research.'],
+        ['id' => 'equipment', 'name' => 'Milli-Q Water Purification', 'image' => 'milli-q-purifier.jpg', 'contain' => true, 'alt' => 'Milli-Q IQ 7005 water purifier with E-POD and Q-POD dispensers and tank', 'text' => 'Laboratory water purification systems and cartridges for pure and ultrapure water.'],
         ['id' => 'consumables', 'name' => 'Millipore Filtration', 'image' => 'consumables.jpg', 'alt' => 'Syringe filters and syringes', 'text' => 'Syringe filters, membranes and filtration products for sample preparation.'],
-        ['id' => 'reagents', 'name' => 'Life Science Reagents', 'image' => 'reagents.jpg', 'alt' => 'Laboratory reagent bottles', 'text' => 'Reagents for cell culture, molecular biology, diagnostics and bioprocessing.'],
+        ['id' => 'reagents', 'name' => 'Life Science Reagents', 'image' => 'hero-lab.jpg', 'alt' => 'Pipette dispensing reagent into laboratory wells', 'text' => 'Reagents for cell culture, molecular biology, diagnostics and bioprocessing.'],
     ];
     $metrohmProducts = [
         ['id' => 'equipment', 'name' => 'Titrators', 'image' => 'metrohm/titrators.jpg', 'alt' => 'Metrohm OMNIS titrators', 'text' => 'Manual and fully automated potentiometric and thermometric titrators with software.'],
@@ -26,7 +26,7 @@
 <section class="hero" aria-labelledby="h1">
   <div class="hero-in">
     <h1 id="h1">Reliable Laboratory Solutions for Science and Industry</h1>
-    <p>Chemicals, reagents, glassware, consumables and equipment for laboratories across Zambia and the DRC, backed by expert advice and authorised Merck and Metrohm supply.</p>
+    <p>Chemicals, reagents, glassware, consumables and equipment for laboratories across Zambia and the Region, backed by expert advice and authorised Merck and Metrohm supply.</p>
     <div class="hero-cta">
       <a href="{{ route('products') }}" class="btn btn-red">Explore Products</a>
       <a href="{{ route('contact') }}#quote" class="btn btn-ghost">Request a Quote</a>
@@ -49,7 +49,7 @@
     <div class="dealer-card">
       <img src="{{ asset('images/logos/merck-logo.svg') }}" alt="Merck" width="233" height="52">
       <p>Laboratory chemicals, reagents, water purification, filtration and life science products from Merck, including Sigma-Aldrich, Millipore and Supelco.</p>
-      <a href="https://www.merckgroup.com/" class="btn btn-ghost" target="_blank" rel="noopener">Visit merckgroup.com <x-icon name="arrow" :size="16" /></a>
+      <a href="https://www.sigmaaldrich.com/" class="btn btn-ghost" target="_blank" rel="noopener">Visit sigmaaldrich.com <x-icon name="arrow" :size="16" /></a>
     </div>
     <div class="dealer-card">
       <img src="{{ asset('images/logos/metrohm-logo.svg') }}" alt="Metrohm" width="233" height="52">
@@ -66,12 +66,12 @@
     <h2 class="sec-title" id="mm-h">Merck and Metrohm Ranges</h2>
     <p>Product families we supply from each manufacturer's catalogue. Contact us for specific items, availability and pricing.</p>
   </div>
-  @foreach ([['Merck', 'https://www.merckgroup.com/', $merckProducts], ['Metrohm', 'https://www.metrohm.com/en/products.html', $metrohmProducts]] as [$maker, $makerUrl, $items])
+  @foreach ([['Merck', 'https://www.sigmaaldrich.com/', $merckProducts], ['Metrohm', 'https://www.metrohm.com/en/products.html', $metrohmProducts]] as [$maker, $makerUrl, $items])
     <h3 class="sub maker-h">{{ $maker }}</h3>
     <div class="grid cats maker-grid">
       @foreach ($items as $item)
         <a class="cat" href="{{ route('contact') }}?{{ http_build_query(['category' => $item['id']]) }}#quote">
-          <div class="ph"><img src="{{ asset('images/'.$item['image']) }}" alt="{{ $item['alt'] }}" loading="lazy"></div>
+          <div class="ph"><img src="{{ asset('images/'.$item['image']) }}" alt="{{ $item['alt'] }}" @if (! empty($item['contain'])) class="contain" @endif loading="lazy"></div>
           <div class="tx"><h3>{{ $item['name'] }}</h3><p>{{ $item['text'] }}</p><span class="more">Enquire &rarr;</span></div>
         </a>
       @endforeach
@@ -107,7 +107,7 @@
   </div>
   <div class="grid cats">
     <a class="cat" href="{{ route('products') }}#chemicals">
-      <div class="ph"><img src="{{ asset('images/hero-lab.jpg') }}" alt="Pipette dispensing reagent into laboratory wells" width="700" height="500" loading="lazy"></div>
+      <div class="ph"><img src="{{ asset('images/reagents.jpg') }}" alt="Glass and plastic laboratory chemical bottles" width="700" height="500" loading="lazy"></div>
       <div class="tx"><h3>Laboratory Chemicals &amp; Reagents</h3><p>High-purity chemicals and reagents for analysis, synthesis and research.</p><span class="more">View catalogue &rarr;</span></div>
     </a>
     <a class="cat" href="{{ route('products') }}#glassware">
@@ -119,7 +119,7 @@
       <div class="tx"><h3>Laboratory Consumables</h3><p>Filters, syringes, filter papers and everyday lab essentials.</p><span class="more">View catalogue &rarr;</span></div>
     </a>
     <a class="cat" href="{{ route('products') }}#equipment">
-      <div class="ph"><img src="{{ asset('images/equipment.jpg') }}" alt="Water purification system and consumable box" width="700" height="393" loading="lazy"></div>
+      <div class="ph"><img class="contain" src="{{ asset('images/milli-q-purifier.jpg') }}" alt="Milli-Q IQ 7005 water purifier with E-POD and Q-POD dispensers and tank" width="700" height="393" loading="lazy"></div>
       <div class="tx"><h3>Laboratory Equipment</h3><p>Instruments and purification systems from leading manufacturers.</p><span class="more">View catalogue &rarr;</span></div>
     </a>
   </div>

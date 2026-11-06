@@ -16,8 +16,8 @@ return [
         [
             'id' => 'chemicals',
             'name' => 'Laboratory Chemicals',
-            'image' => 'hero-lab.jpg',
-            'alt' => 'Pipette dispensing reagent into laboratory wells',
+            'image' => 'reagents.jpg',
+            'alt' => 'Glass and plastic laboratory chemical bottles',
             'summary' => 'High-purity chemicals for analysis, synthesis and research, including products from Merck-Sigma Aldrich.',
             'types' => ['Analytical and research-grade chemicals', 'Solvents and standards', 'Chemicals for synthesis'],
             'uses' => 'Analytical chemistry, chemistry and synthesis, environmental and food testing.',
@@ -25,8 +25,8 @@ return [
         [
             'id' => 'reagents',
             'name' => 'Reagents',
-            'image' => 'reagents.jpg',
-            'alt' => 'Laboratory reagent bottles',
+            'image' => 'hero-lab.jpg',
+            'alt' => 'Pipette dispensing reagent into laboratory wells',
             'summary' => 'Reagents for testing, diagnostics and life science work, supplied with the precision laboratories depend on.',
             'types' => ['Analytical reagents', 'Life science reagents', 'Reagents for cell culture and molecular work'],
             'uses' => 'Clinical diagnostics, cell culture, genomics, protein biology and pharmaceutical work.',
@@ -52,8 +52,9 @@ return [
         [
             'id' => 'equipment',
             'name' => 'Laboratory Equipment',
-            'image' => 'equipment.jpg',
-            'alt' => 'Water purification system and consumable box',
+            'image' => 'milli-q-purifier.jpg',
+            'contain' => true,
+            'alt' => 'Milli-Q IQ 7005 water purifier with E-POD and Q-POD dispensers and tank',
             'summary' => 'Instruments and purification systems from globally recognized manufacturers.',
             'types' => ['Laboratory water purification', 'Laboratory instruments', 'Supporting accessories'],
             'uses' => 'Testing, quality control, research and production support.',

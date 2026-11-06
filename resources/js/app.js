@@ -63,7 +63,8 @@
     Array.prototype.slice.call(track.children).forEach(function (li) {
       var clone = li.cloneNode(true);
       clone.setAttribute('aria-hidden', 'true');
-      clone.querySelector('img').alt = '';
+      var cloneImg = clone.querySelector('img');
+      if (cloneImg) cloneImg.alt = '';
       track.appendChild(clone);
     });
     box.classList.add('is-scrolling');

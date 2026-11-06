@@ -402,3 +402,5 @@ form.quote{display:flex;flex-direction:column;gap:16px}
 .foot-logo img{width:200px;height:auto}
 .dealer-card img{width:auto}
 .nav-quote{display:none}
+.client-marquee .client-name{font-size:20px;font-weight:800;line-height:1.1;letter-spacing:-.3px;color:var(--navy);white-space:nowrap}
+.cat .ph img.contain,.pcat .ph img.contain{object-fit:contain;background:#fff}
