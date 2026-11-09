@@ -29,7 +29,7 @@
     <p>Chemicals, reagents, glassware, consumables and equipment for laboratories across Zambia and the Region, backed by expert advice and authorised Merck and Metrohm supply.</p>
     <div class="hero-cta">
       <a href="{{ route('products') }}" class="btn btn-red">Explore Products</a>
-      <a href="{{ route('contact') }}#quote" class="btn btn-ghost">Request a Quote</a>
+      <a href="{{ config('rdm.linkedin') }}" class="btn btn-ghost" target="_blank" rel="noopener"><x-icon name="linkedin" :size="18" /> LinkedIn</a>
     </div>
     <img class="hero-dealer" src="{{ asset('images/logos/authorised-dealer.svg') }}" alt="Authorised Merck and Metrohm Dealer" width="320" height="69">
   </div>
