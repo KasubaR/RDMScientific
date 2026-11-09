@@ -54,6 +54,24 @@
   </div>
 </section>
 
+<section class="card sec visit" aria-labelledby="visit-h">
+  <div class="visit-grid">
+    <figure class="visit-fig">
+      <img src="{{ asset('images/about/merck-visit.webp') }}" alt="Two men standing together in front of a Merck periodic table poster during Merck's visit to RDM" width="806" height="1080" loading="lazy">
+      <figcaption>Merck Visits RDM, Reinforcing The Partnership.</figcaption>
+    </figure>
+    <div class="visit-txt">
+      <span class="eyebrow">Our partnership</span>
+      <h2 class="sec-title" id="visit-h">Authorised Merck and Metrohm Dealer</h2>
+      <p>RDM supplies genuine Merck and Metrohm products and equipment across Zambia and the Region, backed by expert advice and reliable support.</p>
+      <div class="links-row">
+        <a href="{{ route('products') }}" class="btn btn-red">Explore Products</a>
+        <a href="{{ route('contact') }}" class="btn btn-ghost">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="card sec" aria-labelledby="cap-h">
   <div class="sec-head">
     <span class="eyebrow">Business capabilities</span>
@@ -100,16 +118,10 @@
 </section>
 
 <section class="card sec" id="brands" aria-labelledby="br-h">
-  <div class="partner">
-    <figure class="partner-fig">
-      <img src="{{ asset('images/about/merck-visit.webp') }}" alt="Two men standing together in front of a Merck periodic table poster during Merck's visit to RDM" width="806" height="1080" loading="lazy">
-      <figcaption>Merck Visits RDM, Reinforcing The Partnership.</figcaption>
-    </figure>
-    <div class="sec-head left">
-      <span class="eyebrow">Our brands</span>
-      <h2 class="sec-title" id="br-h">Partnerships with leading manufacturers</h2>
-      <p>As an Authorised Merck and Metrohm Dealer, we offer an extensive range of high-quality life science products and laboratory equipment from two of the world's leading manufacturers. These partnerships give our customers access to cutting-edge chemicals, reagents, supplies and analytical instruments renowned for their precision, reliability and innovation.</p>
-    </div>
+  <div class="sec-head">
+    <span class="eyebrow">Our brands</span>
+    <h2 class="sec-title" id="br-h">Partnerships with leading manufacturers</h2>
+    <p>As an Authorised Merck and Metrohm Dealer, we offer an extensive range of high-quality life science products and laboratory equipment from two of the world's leading manufacturers. These partnerships give our customers access to cutting-edge chemicals, reagents, supplies and analytical instruments renowned for their precision, reliability and innovation.</p>
   </div>
   <ul class="logo-grid">
     <li><img src="{{ asset('images/logos/merck-logo.svg') }}" alt="Merck" height="52" loading="lazy"></li>
