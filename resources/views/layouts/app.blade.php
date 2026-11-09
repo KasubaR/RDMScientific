@@ -21,6 +21,7 @@
     '@type' => 'Organization',
     'name' => config('rdm.name'),
     'foundingDate' => '1984',
+    'sameAs' => [config('rdm.linkedin')],
     'url' => config('app.url'),
     'email' => config('rdm.email'),
     'telephone' => config('rdm.phone_href'),

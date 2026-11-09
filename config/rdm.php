@@ -4,15 +4,16 @@ return [
     'name' => 'RDM Scientific Products Limited',
     'phone' => '+260 977 783636',
     'phone_href' => '+260977783636',
-    'email' => 'info@rdmscientific.co.zm',
+    'email' => 'sales@rdmscientific.co.zm',
 
     // WhatsApp number in international format, digits only. Confirm this number is on WhatsApp.
     'whatsapp' => env('RDM_WHATSAPP', '260977783636'),
     'address' => 'Plot No. 1 Chisokone Road, Off Great East Road, Lusaka, Zambia',
     'website' => 'https://www.rdmscientific.com',
+    'linkedin' => 'https://www.linkedin.com/company/rdm-scientific-products-limited/',
 
     // Where new website enquiries are sent.
-    'sales_email' => env('RDM_SALES_EMAIL', 'info@rdmscientific.co.zm'),
+    'sales_email' => env('RDM_SALES_EMAIL', 'sales@rdmscientific.co.zm'),
 
     // Send the visitor an automatic copy of their enquiry (off by default).
     'send_confirmation' => (bool) env('RDM_SEND_CONFIRMATION', false),

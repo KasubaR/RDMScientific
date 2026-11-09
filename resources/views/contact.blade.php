@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Contact Us | RDM Scientific Products Limited')
-@section('description', 'Contact RDM Scientific Products Limited in Lusaka, Zambia. Call +260 977 783636, email info@rdmscientific.co.zm or send a product enquiry or quote request.')
+@section('description', 'Contact RDM Scientific Products Limited in Lusaka, Zambia. Call +260 977 783636, email sales@rdmscientific.co.zm or send a product enquiry or quote request.')
 @section('og_title', 'Contact Us | RDM Scientific Products Limited')
 @section('og_description', 'Reach RDM for laboratory supplies, quotations and technical assistance in Zambia and the Region.')
 
@@ -130,6 +130,10 @@
         <li class="crow">
           <span class="ic"><x-icon name="mail" :size="22" /></span>
           <div><b>Email</b><a href="mailto:{{ config('rdm.email') }}">{{ config('rdm.email') }}</a></div>
+        </li>
+        <li class="crow">
+          <span class="ic"><x-icon name="linkedin" :size="22" /></span>
+          <div><b>LinkedIn</b><a href="{{ config('rdm.linkedin') }}" rel="noopener" target="_blank">Follow us on LinkedIn</a></div>
         </li>
         <li class="crow">
           <span class="ic"><x-icon name="pin" :size="22" /></span>

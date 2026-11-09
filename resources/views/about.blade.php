@@ -107,6 +107,7 @@
   </div>
   <ul class="logo-grid">
     <li><img src="{{ asset('images/logos/merck-logo.svg') }}" alt="Merck" height="52" loading="lazy"></li>
+    <li><img src="{{ asset('images/logos/metrohm-logo.svg') }}" alt="Metrohm" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/sigma-aldrich.webp') }}" alt="Sigma-Aldrich" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/millipore.webp') }}" alt="Millipore" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/milli-q.webp') }}" alt="Milli-Q" height="52" loading="lazy"></li>
@@ -118,6 +119,7 @@
     <li><img src="{{ asset('images/brands/eppendorf.webp') }}" alt="Eppendorf" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/duran.webp') }}" alt="DURAN Group" height="52" loading="lazy"></li>
     <li><img src="{{ asset('images/brands/brand.webp') }}" alt="BRAND" height="52" loading="lazy"></li>
+    <li><img src="{{ asset('images/brands/sartorius.webp') }}" alt="Sartorius" height="52" loading="lazy"></li>
   </ul>
   <div class="center links-row">
     <a href="https://www.sigmaaldrich.com/" class="btn btn-ghost" target="_blank" rel="noopener">Visit sigmaaldrich.com</a>

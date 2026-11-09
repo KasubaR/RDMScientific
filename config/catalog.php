@@ -137,9 +137,9 @@ return [
     ],
 
     'brands' => [
-        ['merck', 'Merck'], ['sigma-aldrich', 'Sigma-Aldrich'], ['millipore', 'Millipore'], ['milli-q', 'Milli-Q'],
+        ['merck', 'Merck'], ['metrohm', 'Metrohm'], ['sigma-aldrich', 'Sigma-Aldrich'], ['millipore', 'Millipore'], ['milli-q', 'Milli-Q'],
         ['supelco', 'Supelco'], ['safc', 'SAFC'], ['bioreliance', 'BioReliance'], ['cytiva', 'Cytiva'],
-        ['whatman', 'Whatman'], ['eppendorf', 'Eppendorf'], ['duran', 'DURAN Group'], ['brand', 'BRAND'],
+        ['whatman', 'Whatman'], ['eppendorf', 'Eppendorf'], ['duran', 'DURAN Group'], ['brand', 'BRAND'], ['sartorius', 'Sartorius'],
     ],
 
     'resources' => [

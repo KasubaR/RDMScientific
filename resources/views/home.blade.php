@@ -34,7 +34,7 @@
     <img class="hero-dealer" src="{{ asset('images/logos/authorised-dealer.svg') }}" alt="Authorised Merck and Metrohm Dealer" width="320" height="69">
   </div>
   <div class="hero-art" aria-hidden="true">
-    <img class="art-hero" src="{{ asset('images/hero/hero.webp') }}" alt="" width="1021" height="753">
+    <img class="art-hero" src="{{ asset('images/hero/hero.webp') }}" alt="" width="1094" height="823">
   </div>
 </section>
 
@@ -193,6 +193,7 @@
   <div class="marquee" aria-label="Brands we supply">
     <ul class="marquee-track">
       <li><img src="{{ asset('images/logos/merck-logo.svg') }}" alt="Merck" height="52" loading="lazy"></li>
+      <li><img src="{{ asset('images/logos/metrohm-logo.svg') }}" alt="Metrohm" height="52" loading="lazy"></li>
       <li><img src="{{ asset('images/brands/sigma-aldrich.webp') }}" alt="Sigma-Aldrich" height="52" loading="lazy"></li>
       <li><img src="{{ asset('images/brands/millipore.webp') }}" alt="Millipore" height="52" loading="lazy"></li>
       <li><img src="{{ asset('images/brands/milli-q.webp') }}" alt="Milli-Q" height="52" loading="lazy"></li>
@@ -204,6 +205,7 @@
       <li><img src="{{ asset('images/brands/eppendorf.webp') }}" alt="Eppendorf" height="52" loading="lazy"></li>
       <li><img src="{{ asset('images/brands/duran.webp') }}" alt="DURAN Group" height="52" loading="lazy"></li>
       <li><img src="{{ asset('images/brands/brand.webp') }}" alt="BRAND" height="52" loading="lazy"></li>
+      <li><img src="{{ asset('images/brands/sartorius.webp') }}" alt="Sartorius" height="52" loading="lazy"></li>
     </ul>
   </div>
   <div class="center"><a href="{{ route('products') }}#brands" class="btn btn-ghost">View all brands</a></div>

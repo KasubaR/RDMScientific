@@ -127,7 +127,7 @@
   </div>
   <ul class="logo-grid">
     @foreach ($catalog['brands'] as [$file, $label])
-      <li><img src="{{ $file === 'merck' ? asset('images/logos/merck-logo.svg') : asset('images/brands/'.$file.'.webp') }}" alt="{{ $label }}" height="52" loading="lazy"></li>
+      <li><img src="{{ in_array($file, ['merck', 'metrohm']) ? asset('images/logos/'.$file.'-logo.svg') : asset('images/brands/'.$file.'.webp') }}" alt="{{ $label }}" height="52" loading="lazy"></li>
     @endforeach
   </ul>
 </section>

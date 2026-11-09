@@ -33,6 +33,7 @@
         <li><a href="mailto:{{ config('rdm.email') }}">{{ config('rdm.email') }}</a></li>
         <li>{{ config('rdm.address') }}</li>
       </ul>
+      <a href="{{ config('rdm.linkedin') }}" class="foot-social" target="_blank" rel="noopener"><x-icon name="linkedin" :size="18" /> Follow us on LinkedIn</a>
     </div>
   </div>
   <div class="copy">
