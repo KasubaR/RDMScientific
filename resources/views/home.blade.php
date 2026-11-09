@@ -34,7 +34,7 @@
     <img class="hero-dealer" src="{{ asset('images/logos/authorised-dealer.svg') }}" alt="Authorised Merck and Metrohm Dealer" width="320" height="69">
   </div>
   <div class="hero-art" aria-hidden="true">
-    <img class="art-hero" src="{{ asset('images/hero/hero.webp') }}" alt="" width="1021" height="654">
+    <img class="art-hero" src="{{ asset('images/hero/hero.webp') }}" alt="" width="1021" height="753">
   </div>
 </section>
 
