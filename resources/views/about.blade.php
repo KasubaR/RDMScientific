@@ -100,10 +100,16 @@
 </section>
 
 <section class="card sec" id="brands" aria-labelledby="br-h">
-  <div class="sec-head">
-    <span class="eyebrow">Our brands</span>
-    <h2 class="sec-title" id="br-h">Partnerships with leading manufacturers</h2>
-    <p>As an Authorised Merck and Metrohm Dealer, we offer an extensive range of high-quality life science products and laboratory equipment from two of the world's leading manufacturers. These partnerships give our customers access to cutting-edge chemicals, reagents, supplies and analytical instruments renowned for their precision, reliability and innovation.</p>
+  <div class="partner">
+    <figure class="partner-fig">
+      <img src="{{ asset('images/about/merck-visit.webp') }}" alt="Two men standing together in front of a Merck periodic table poster during Merck's visit to RDM" width="806" height="1080" loading="lazy">
+      <figcaption>Merck Visits RDM, Reinforcing The Partnership.</figcaption>
+    </figure>
+    <div class="sec-head left">
+      <span class="eyebrow">Our brands</span>
+      <h2 class="sec-title" id="br-h">Partnerships with leading manufacturers</h2>
+      <p>As an Authorised Merck and Metrohm Dealer, we offer an extensive range of high-quality life science products and laboratory equipment from two of the world's leading manufacturers. These partnerships give our customers access to cutting-edge chemicals, reagents, supplies and analytical instruments renowned for their precision, reliability and innovation.</p>
+    </div>
   </div>
   <ul class="logo-grid">
     <li><img src="{{ asset('images/logos/merck-logo.svg') }}" alt="Merck" height="52" loading="lazy"></li>
